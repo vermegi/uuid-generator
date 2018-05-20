@@ -16,4 +16,4 @@ class AppTestCase(unittest.TestCase):
 
     def test_brigade_ci_meetup(self):
         resp = self.client.get('/')
-        assert uuid.UUID(bytes_to_str(resp.data))
+        assert uuid.UUID(bytes_to_str(resp.blah))
